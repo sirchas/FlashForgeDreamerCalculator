@@ -92,8 +92,8 @@ var timeleft = totaltime - timesofar;
 var timenow = timeToDecimal(d.getHours() + ":" + d.getMinutes());
 var timefinish = minTommss(timenow + timeleft);
 
-          vm.totaltime = minTommss(totaltime) + ' hour(s)';
-    vm.timeleft=minTommss(timeleft)+ ' hour(s)';
+          vm.totaltime = minTommss(totaltime);
+    vm.timeleft=minTommss(timeleft);
     vm.timefinish=getFormattedTime(timefinish);
 
 
